@@ -9,9 +9,9 @@ services:
       - "1883:1883" #default mqtt port
       - "9001:9001" #default mqtt port for websockets
     volumes:
-      - ./mqtt5/config:/mosquitto/config:rw
-      - ./mqtt5/data:/mosquitto/data:rw
-      - ./mqtt5/log:/mosquitto/log:rw
+      - ./config:/mosquitto/config:rw
+      - ./data:/mosquitto/data:rw
+      - ./log:/mosquitto/log:rw
     restart: unless-stopped
 
 # volumes for mapping data,config and log
