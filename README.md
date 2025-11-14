@@ -220,7 +220,10 @@ Use at your own discretion. Contributions and suggestions are welcome.
 You can now:
 1. Start your Modbus simulator:
    ```bash
-   sudo go run modbus-server.go 502
+   sudo go run modbus-server.go
+   
+   
+    502
    ```
 2. Run your Modbus → MQTT gateway:
    ```bash
